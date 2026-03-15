@@ -5,7 +5,7 @@ description: "Paste a meeting transcript → get content stories, action items, 
 
 # The Lead Meeting Miner
 
-Trigger: "run meeting miner" or "mine this meeting"
+Trigger: "meeting" or "run meeting miner" or "mine this meeting"
 
 ## What This Does
 
@@ -16,11 +16,13 @@ Takes any meeting transcript and extracts 3 things:
 
 Output: a single file called `meeting-notes-YYYY-MM-DD.md`
 
-## How To Use
+## STEP 0 — ASK FOR TRANSCRIPT
 
-Paste your meeting transcript into the chat, or point to a transcript file. Then say "run meeting miner."
+When the user triggers this skill, the FIRST thing you do is ask:
 
-Works with transcripts from: Zoom, Google Meet, Teams, Fireflies, Otter, or any plain text transcript.
+"Upload your meeting transcript. You can paste the text directly or drag in a file. Any format works (Zoom, Google Meet, Teams, Otter, Fireflies)."
+
+Wait for the user to provide the transcript before proceeding to Step 1. Do NOT start extracting until you have the transcript.
 
 ## STEP 1 — CONTENT STORIES
 
