@@ -32,43 +32,44 @@ One 30-minute call gave us 5 content angles, 7 action items, and 4 topics with c
 
 Full example: [example-output.md](example-output.md)
 
-## Setup
+## Setup (Simple)
 
-**1. Install Claude Code**
+Works in Claude.ai, Claude Co-Work, or any AI chat. No terminal. No install.
 
-```
-npm install -g @anthropic-ai/claude-code
-```
+**1.** Copy the contents of [SKILL.md](the-lead-meeting-miner.skill/SKILL.md)
 
-Run `claude` in your terminal. Set up your API key. Done.
+**2.** Open Claude. Paste the SKILL.md first, then paste your meeting transcript below it.
 
-**2. Add the skill**
+**3.** Type: "run meeting miner"
+
+**4.** Claude reads the instructions, mines your transcript, and gives you the three sections.
+
+Copy the output into a new doc. Done.
+
+## Setup (Advanced)
+
+For Claude Code CLI users. The skill auto-detects and saves the output to a file for you.
+
+**1.** Clone this repo:
 
 ```
 git clone https://github.com/yours2grab/the-lead-meeting-miner.git
 ```
 
-Or download `SKILL.md` and drop it in a folder called `the-lead-meeting-miner.skill/`
+**2.** Open Claude Code inside the folder:
 
-**3. Run it**
+```
+cd the-lead-meeting-miner
+claude
+```
 
-Paste your transcript and say:
+**3.** Paste your transcript and say:
 
 ```
 run meeting miner
 ```
 
-Or point to a file:
-
-```
-mine this meeting: /path/to/transcript.md
-```
-
-**4. Check your file**
-
-Everything lands in one file: `meeting-notes-YYYY-MM-DD.md`
-
-One meeting. One file. Nothing lost.
+**4.** Your notes land in one file: `meeting-notes-YYYY-MM-DD.md`
 
 ## Getting Your Transcript
 
